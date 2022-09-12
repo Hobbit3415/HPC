@@ -1,0 +1,7 @@
+/home/hobbit/Documents/HPC/build-taller_01_eigen/Debug/CMakeFiles/taller_01_eigen.dir
+/home/hobbit/Documents/HPC/build-taller_01_eigen/Debug/CMakeFiles/edit_cache.dir
+/home/hobbit/Documents/HPC/build-taller_01_eigen/Debug/CMakeFiles/rebuild_cache.dir
+/home/hobbit/Documents/HPC/build-taller_01_eigen/Debug/CMakeFiles/list_install_components.dir
+/home/hobbit/Documents/HPC/build-taller_01_eigen/Debug/CMakeFiles/install.dir
+/home/hobbit/Documents/HPC/build-taller_01_eigen/Debug/CMakeFiles/install/local.dir
+/home/hobbit/Documents/HPC/build-taller_01_eigen/Debug/CMakeFiles/install/strip.dir

@@ -1,0 +1,7 @@
+/home/hobbit/Documents/HPC/build-Algebra01-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/Algebra01.dir
+/home/hobbit/Documents/HPC/build-Algebra01-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
+/home/hobbit/Documents/HPC/build-Algebra01-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
+/home/hobbit/Documents/HPC/build-Algebra01-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/list_install_components.dir
+/home/hobbit/Documents/HPC/build-Algebra01-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/install.dir
+/home/hobbit/Documents/HPC/build-Algebra01-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/install/local.dir
+/home/hobbit/Documents/HPC/build-Algebra01-Desktop_Qt_6_3_1_GCC_64bit-Debug/CMakeFiles/install/strip.dir
