@@ -1,0 +1,4 @@
+# ninja log v5
+2	2345	1665426007892908489	CMakeFiles/LinealRegresion.dir/main.cpp.o	df41e2f73c8e3a56
+3222	3661	1665426009212933963	LinealRegresion	11b898c5048d81fe
+2	3222	1665426008768925393	CMakeFiles/LinealRegresion.dir/Extraction/extraction_data.cpp.o	f3ea2b2fc520ab79
