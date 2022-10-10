@@ -1,7 +1,0 @@
-/home/hobbit/Documents/HPC/LinearRegresion/Debug/CMakeFiles/LinealRegresion.dir
-/home/hobbit/Documents/HPC/LinearRegresion/Debug/CMakeFiles/edit_cache.dir
-/home/hobbit/Documents/HPC/LinearRegresion/Debug/CMakeFiles/rebuild_cache.dir
-/home/hobbit/Documents/HPC/LinearRegresion/Debug/CMakeFiles/list_install_components.dir
-/home/hobbit/Documents/HPC/LinearRegresion/Debug/CMakeFiles/install.dir
-/home/hobbit/Documents/HPC/LinearRegresion/Debug/CMakeFiles/install/local.dir
-/home/hobbit/Documents/HPC/LinearRegresion/Debug/CMakeFiles/install/strip.dir
