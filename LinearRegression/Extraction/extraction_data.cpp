@@ -131,9 +131,9 @@ std::tuple<Eigen::MatrixXd,Eigen::MatrixXd,Eigen::MatrixXd,Eigen::MatrixXd> Extr
 void ExtractionData::VectorToFile(std::vector<float> vector, std::string file_name){
     std::ofstream file_salida(file_name);
     // Se crea un iterador para almacenar la salida del vector
-    std::ostream_iterador<float> salida_iterador(file_salida, "\n");
+    std::ostream_iterator<float> salida_iterator(file_salida, "\n");
     // Se copia cada valor desde el inicio hasta el fin del iterador en el fichero
-    std::copy(vector.begin(), vector.end(), salida_iterador);
+    std::copy(vector.begin(), vector.end(), salida_iterator);
 }
 
 /* Para efectos de manipulacion y visualizacion se crea la funcion

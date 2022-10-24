@@ -51,19 +51,19 @@ build cmake_object_order_depends_target_LinealRegresion: phony || CMakeFiles/Lin
 
 build CMakeFiles/LinealRegresion.dir/main.cpp.o: CXX_COMPILER__LinealRegresion_Debug /home/hobbit/Documents/HPC/LinearRegression/main.cpp || cmake_object_order_depends_target_LinealRegresion
   DEP_FILE = CMakeFiles/LinealRegresion.dir/main.cpp.o.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++11
+  FLAGS = -g -std=gnu++11
   OBJECT_DIR = CMakeFiles/LinealRegresion.dir
   OBJECT_FILE_DIR = CMakeFiles/LinealRegresion.dir
 
 build CMakeFiles/LinealRegresion.dir/Extraction/extraction_data.cpp.o: CXX_COMPILER__LinealRegresion_Debug /home/hobbit/Documents/HPC/LinearRegression/Extraction/extraction_data.cpp || cmake_object_order_depends_target_LinealRegresion
   DEP_FILE = CMakeFiles/LinealRegresion.dir/Extraction/extraction_data.cpp.o.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++11
+  FLAGS = -g -std=gnu++11
   OBJECT_DIR = CMakeFiles/LinealRegresion.dir
   OBJECT_FILE_DIR = CMakeFiles/LinealRegresion.dir/Extraction
 
 build CMakeFiles/LinealRegresion.dir/Regression/linearregression.cpp.o: CXX_COMPILER__LinealRegresion_Debug /home/hobbit/Documents/HPC/LinearRegression/Regression/linearregression.cpp || cmake_object_order_depends_target_LinealRegresion
   DEP_FILE = CMakeFiles/LinealRegresion.dir/Regression/linearregression.cpp.o.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++11
+  FLAGS = -g -std=gnu++11
   OBJECT_DIR = CMakeFiles/LinealRegresion.dir
   OBJECT_FILE_DIR = CMakeFiles/LinealRegresion.dir/Regression
 
@@ -76,7 +76,7 @@ build CMakeFiles/LinealRegresion.dir/Regression/linearregression.cpp.o: CXX_COMP
 # Link the executable LinealRegresion
 
 build LinealRegresion: CXX_EXECUTABLE_LINKER__LinealRegresion_Debug CMakeFiles/LinealRegresion.dir/main.cpp.o CMakeFiles/LinealRegresion.dir/Extraction/extraction_data.cpp.o CMakeFiles/LinealRegresion.dir/Regression/linearregression.cpp.o
-  FLAGS = -DQT_QML_DEBUG -g
+  FLAGS = -g
   OBJECT_DIR = CMakeFiles/LinealRegresion.dir
   POST_BUILD = :
   PRE_LINK = :
