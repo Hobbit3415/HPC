@@ -1,11 +1,25 @@
-#ifndef LINEAR_REGRESSION_H
-#define LINEAR_REGRESSION_H
+#ifndef LINEARREGRESSION_H
+#define LINEARREGRESSION_H
 
+#include <eigen3/Eigen/Dense>
+#include <iostream>
+#include <vector>
+#include <cmath>
 
-class Linear_regression
+class LinearRegression
 {
+
 public:
-    Linear_regression();
+
+    float OLS_cost(Eigen::MatrixXd X, Eigen::MatrixXd y, Eigen::MatrixXd theta);
+
+    std::tuple<Eigen::VectorXd, std::vector<float>> GradientDescent(Eigen::MatrixXd X,
+                                                                    Eigen::MatrixXd y,
+                                                                    Eigen::VectorXd theta,
+                                                                    float alpha,
+                                                                    int num_iter);
+    float RSquared(Eigen::MatrixXd y, Eigen::MatrixXd y_hat);
 };
 
-#endif // LINEAR_REGRESSION_H
+
+#endif // LINEARREGRESSION_H

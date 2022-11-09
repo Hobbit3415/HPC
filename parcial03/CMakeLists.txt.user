@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 8.0.2, 2022-11-09T09:29:34. -->
+<!-- Written by QtCreator 8.0.2, 2022-11-09T14:29:14. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -164,7 +164,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">parcial03</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.parcial03</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">parcial03</value>
-    <value type="QString" key="RunConfiguration.Arguments">/home/hobbit/Documents/HPC/parcial03/dataset/song_data.csv &quot;,&quot; false</value>
+    <value type="QString" key="RunConfiguration.Arguments">/home/hobbit/Documents/HPC/parcial03/Dataset/song_data.csv &quot;,&quot; true</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>

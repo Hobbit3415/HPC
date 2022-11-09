@@ -21,13 +21,27 @@ std::vector<std::vector<std::string>> ExtractionData::LeerCSV(){
     /*Idea : Recorrer cada linea del fichero y
      * enviarla como vector al vector de vectores del tipo string*/
     std::string linea = "";
-    while(getline(archivo,linea)){
+
+//    archivo.ignore(std::numeric_limits<std::streamsize>::max(), ',');
+
+    while(getline(archivo, linea)){
         std::vector<std::string> vector;
         /*Se indentifica cada elemento que compone el vector*/
         //Se divide o segementa cada elemento cob boost
+
         boost::algorithm::split(vector, linea, boost::is_any_of(delimitador));
         /*Finalmente se ingresa al buffer temporal*/
-        datosString.push_back(vector);
+
+        /* Vector donde se copiara el vector original sin la primera columna */
+        std::vector<std::string> copyVector;
+
+        /* Primer elemento del vector +1, final del vector, donde voy a copiar */
+        std::copy(vector.begin()+1, vector.end(), std::back_inserter(copyVector));
+
+        /* Pushback a datos string */
+        datosString.push_back(copyVector);
+
+        copyVector.clear();
     }
     /*Se cierra el fichero csv*/
     archivo.close();
@@ -112,14 +126,14 @@ std::tuple<Eigen::MatrixXd,Eigen::MatrixXd,Eigen::MatrixXd,Eigen::MatrixXd> Extr
     Eigen::MatrixXd Train = datos.topRows(filas_train);
 
     /*Se desprenden para independientes e independietnes*/
-    Eigen::MatrixXd X_train = Train.leftCols(datos.cols()-1);
-    Eigen::MatrixXd y_train = Train.rightCols(1);
+    Eigen::MatrixXd X_train = Train.rightCols(datos.cols()-1);
+    Eigen::MatrixXd y_train = Train.leftCols(1);
 
     Eigen::MatrixXd Test = datos.bottomRows(filas_test);
 
     /*Se desprenden para independientes e independietnes*/
-    Eigen::MatrixXd X_test = Test.leftCols(datos.cols()-1);
-    Eigen::MatrixXd y_test = Test.rightCols(1);
+    Eigen::MatrixXd X_test = Test.rightCols(datos.cols()-1);
+    Eigen::MatrixXd y_test = Test.leftCols(1);
 
     /*Se compacta la tupla y se retorna*/
 
