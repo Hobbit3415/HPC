@@ -1,0 +1,7 @@
+/home/hobbit/Documents/HPC/parcial03/Debug/CMakeFiles/parcial03.dir
+/home/hobbit/Documents/HPC/parcial03/Debug/CMakeFiles/edit_cache.dir
+/home/hobbit/Documents/HPC/parcial03/Debug/CMakeFiles/rebuild_cache.dir
+/home/hobbit/Documents/HPC/parcial03/Debug/CMakeFiles/list_install_components.dir
+/home/hobbit/Documents/HPC/parcial03/Debug/CMakeFiles/install.dir
+/home/hobbit/Documents/HPC/parcial03/Debug/CMakeFiles/install/local.dir
+/home/hobbit/Documents/HPC/parcial03/Debug/CMakeFiles/install/strip.dir
