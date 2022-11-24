@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
     int filas = lec_datos.size();
     int columnas = lec_datos[0].size();
 
-//    std::cout<<lec_datos<<std::endl;
+//    std::cout<< lec_datos <<std::endl;
 
     std::cout<<"Num_filas: "<<filas <<std::endl;
     std::cout<<"Num_columnas: "<<columnas <<std::endl;
@@ -41,6 +41,8 @@ int main(int argc, char* argv[])
 
     Eigen::MatrixXd matData = Obj_extraccion.CSVtoEigen(lec_datos, filas, columnas);
 
+//    std::cout<<"-mat data: "<< std::endl;
+//    std::cout<< matData << std::endl;
 //    std::cout<<"Suma por columnas "<<std::endl;
 //    std::cout<<Obj_extraccion.Sumatoria(matData)<<std::endl;
 
@@ -49,6 +51,9 @@ int main(int argc, char* argv[])
     std::cout<<"########################"<<std::endl;
     std::cout<<"Desviaciones STD por columnas"<<std::endl;
     std::cout<<Obj_extraccion.DevStand(matData)<<std::endl;
+
+    std::cout<<"Primera fila: "<<std::endl;
+    std::cout<< matData(0) <<std::endl;
 
     Eigen::MatrixXd normData = Obj_extraccion.Norm(matData);
 
@@ -122,7 +127,7 @@ int main(int argc, char* argv[])
 //     * y = mX+b
 //     */
     Eigen::MatrixXd y_train_hat = (X_train*thetas_salida * desv_independientes).array()+prom_independientes;
-    Eigen::MatrixXd y_train_real = matData.col(0).topRows(15068);
+    Eigen::MatrixXd y_train_real = matData.col(0).topRows(15067);
 
     Eigen::MatrixXd y_test_hat = (X_test*thetas_salida * desv_independientes).array()+prom_independientes;
     Eigen::MatrixXd y_test_real = matData.col(0).bottomRows(3767);

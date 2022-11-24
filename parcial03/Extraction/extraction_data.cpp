@@ -15,6 +15,7 @@ std::vector<std::vector<std::string>> ExtractionData::LeerCSV(){
     /*En primer lugar se abre y se almacena el
      * fichero en un buffer o variable temporal "archivo" */
     std::fstream archivo(dataset);
+
     //Se crea un vector de vectores del tipo string
     std::vector<std::vector<std::string>> datosString;
 
@@ -22,7 +23,8 @@ std::vector<std::vector<std::string>> ExtractionData::LeerCSV(){
      * enviarla como vector al vector de vectores del tipo string*/
     std::string linea = "";
 
-//    archivo.ignore(std::numeric_limits<std::streamsize>::max(), ',');
+    // Me salto la primera linea con valores en cero
+    getline(archivo, linea);
 
     while(getline(archivo, linea)){
         std::vector<std::string> vector;
@@ -40,6 +42,8 @@ std::vector<std::vector<std::string>> ExtractionData::LeerCSV(){
 
         /* Pushback a datos string */
         datosString.push_back(copyVector);
+//        datosString.push_back(vector);
+//        vector.clear();
 
         copyVector.clear();
     }
